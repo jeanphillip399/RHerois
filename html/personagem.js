@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const descricao = document.getElementById('descricao')
     const xp = document.getElementById("xp")
     //PEGANDO OS ATRIBUTOS DO BACK:
-    fetch('http://localhost:3000/atributos',{
+    fetch('https://rherois.onrender.com/atributos',{
         method:'POST',
         headers:{
             'Content-type':'application/json'
@@ -111,7 +111,7 @@ function salvar(){
         corInputs:corInputs,
         imagem:imagem.src
     }
-    fetch('http://localhost:3000/salvar',{
+    fetch('https://rherois.onrender.com/salvar',{
         method:'POST',
         headers:{
             'Content-type':'application/json'
