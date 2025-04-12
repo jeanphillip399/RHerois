@@ -3,17 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="./index.js"></script>
     <title>Página Inicial</title>
 </head>
 <body>
-    <label for="">Nome:</label>
-    <input type="text" id="nome">
-    <label for="">Senha:</label>
-    <input type="text" id="senha">
-    <button onclick="logar()">Logar</button>
+    <div id="container">
+        <h1 style="color: white;">Entrar com o Login:</h1>
+        <label for="">Nome:</label>
+        <input type="text" id="nome">
+        <label for="">Senha:</label>
+        <input type="text" id="senha">
+        <button onclick="logar()">Logar</button>
+    </div>
+ 
     <div>
         <p id="resultado"></p>
     </div>
+    <style>
+        body{
+            background-image:url('./rHeroes.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        label{
+            color: white;
+        }
+        input{
+            border-radius: 10px;
+            border: 0px;
+            max-width: 100px;
+        }
+        button{
+            background-color: white;
+            border-radius: 10px;
+            border: 0px;
+            cursor: pointer;
+        }
+    </style>
 </body>
 </html>
