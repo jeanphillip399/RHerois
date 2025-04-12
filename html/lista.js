@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
         data.forEach((p)=>{
             let texto = document.createElement('p')
             let caixa = document.createElement('div')
-            texto.textContent = p.nomePerson + "\n"
+            texto.textContent = p.nomePerson
             texto.style.color = "white"
             caixa.style.backgroundColor = "rgb(77, 96, 114)"
             caixa.style.display = "flex"
@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function(){
             caixa.style.cursor = "pointer"
             caixa.onclick = ()=> mudar(p.nomePerson)
             caixa.appendChild(texto)
-            container.innerHTML +=caixa + "<br>"
+            container.appendChild(caixa)
+            container.innerHTML += "<br>"
         })
     })
 })
