@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(){
             caixa.style.cursor = "pointer"
             caixa.onclick = ()=> mudar(p.nomePerson)
             caixa.appendChild(texto)
-            container.appendChild(caixa)
+            container.innerHTML +=caixa + "<br>"
         })
     })
 })
