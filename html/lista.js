@@ -31,10 +31,11 @@ document.addEventListener("DOMContentLoaded", function(){
             caixa.style.justifyContent = "center"
             caixa.style.alignItems = "center"
             caixa.style.cursor = "pointer"
+            container.innerHTML += "<br>"
             caixa.onclick = ()=> mudar(p.nomePerson)
             caixa.appendChild(texto)
             container.appendChild(caixa)
-            container.innerHTML += "<br>"
+            
         })
     })
 })
