@@ -26,7 +26,7 @@ app.post('/logar', async(req,res)=>{
         const logar = await prisma.user.findFirst({where:{nome:nome, senha:senha}})
         if(logar){
             console.log("logado com sucesso!!!")
-            res.json({menssagem:"Usuário encontrado", logado:true})
+            res.json({menssagem:"Usuário encontrado!!!", logado:true})
         }
         else{
             res.json({menssagem:"Usuário ou senha incorretos"})

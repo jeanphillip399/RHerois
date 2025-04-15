@@ -29,6 +29,8 @@
         <label for="inventario" style="font-size: 20px;" id="labelInv">Inventário:</label>
         <br>
         <div id="inventario"contenteditable="true"></div>
+        <div contenteditable="true" id="inventarioBanco"></div>
+        <div contenteditable="true" id="descricaoBanco"></div>
         <label for="descricao" style="font-size: 20px;"  id="labelDesc">Descrição:</label>
         <br>
         <div id="descricao" contenteditable="true"></div>
@@ -36,10 +38,10 @@
         <input type="file" id="imagemInput">
     </div>
     <style>
-        body{
+        html,body{
             margin: 0;
             padding: 0;
-            height: 100vh;
+            height: 110vh;
         }
         #imagem{
             border-radius: 100px;
@@ -71,12 +73,12 @@
             border-radius: 5px;
             text-align: center;
         }
-        #inventario,#descricao{
+        #inventario, #inventarioBanco, #descricaoBanco, #descricao{
             position: absolute;
             border-radius: 8px;
             width: 30vw;
-            min-height: 30vw ;
-            max-height: 30vw;
+            min-height: 20vw ;
+            max-height: 20vw;
             white-space: normal;
             word-wrap: break-word;
             padding-right: 5px;
@@ -92,6 +94,14 @@
         #inventario{
             top: 10vh;
             right: 50vw;
+        }
+        #inventarioBanco{
+            top: 60vh;
+            right: 50vw;
+        }
+        #descricaoBanco{
+            top: 60vh;
+            right: 10vw;
         }
         #labelInv{
             position: absolute;
