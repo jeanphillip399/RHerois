@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", function(){
             })
     })
     //PEGANDO OS ATRIBUTOS DO BACK:
-    //'https://rherois.onrender.com/atributos'
-    fetch('http://localhost:3000/atributos',{
+    //'http://localhost:3000/atributos'
+    fetch('https://rherois.onrender.com/atributos',{
         method:'POST',
         headers:{
             'Content-type':'application/json'
@@ -118,8 +118,8 @@ function salvar(){
         imagem:imagem.src
     }
     
-    //'https://rherois.onrender.com/salvar'
-    fetch('http://localhost:3000/salvar',{
+    //'http://localhost:3000/salvar'
+    fetch('https://rherois.onrender.com/salvar',{
         method:'POST',
         headers:{
             'Content-type':'application/json'

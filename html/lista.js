@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function(){
     //charAt serve para pegar um caractere do nome, toUpperCase para transforma-lo em maisculo, e nome.slice() para digitar resto
     titulo.textContent = nome.charAt(0).toUpperCase()+nome.slice(1) +" personagens:"
     titulo.style.color = "white"
-    //'https://rherois.onrender.com/personagens'
+    //'http://localhost:3000/personagens'
     
-    fetch('http://localhost:3000/personagens',{
+    fetch('https://rherois.onrender.com/personagens',{
         method:'POST',
         headers:{
             'Content-type':'application/json'
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 function mudar(person){
     localStorage.setItem("nomePerson", person)
-    //"https://rherois.onrender.com/"
+    //'http://localhost:3000/'
     
-    window.location.href = 'http://localhost:3000/'+person
+    window.location.href = "https://rherois.onrender.com/"+person
 }

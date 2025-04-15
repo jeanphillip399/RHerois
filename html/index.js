@@ -4,8 +4,8 @@ function logar(){
     const query = {nome:nome,senha:senha}
     const resultado = document.getElementById('resultado')
 
-//'https://rherois.onrender.com/logar'
-    fetch('http://localhost:3000/logar',{
+//'http://localhost:3000/logar'
+    fetch('https://rherois.onrender.com/logar',{
         method:'POST',
         headers:{
             'Content-type':'application/json'
